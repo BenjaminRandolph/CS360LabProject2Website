@@ -13,6 +13,98 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <h1>Ben</h1>&nbsp; &nbsp;
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Bio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact
+                    </a>
+                    <ul class="dropdown-menu">
+                        <form action="">
+                            <div class="mb-3">
+                                <label for="emailAddress" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="textArea" class="form-label">Message to send</label>
+                                <textarea class="form-control" id="textArea" rows="3"></textarea>
+                            </div>
+                            <button type="submit" id="contactButton" class="btn btn-primary">Send me a message!</button>
+                        </form>
+                    </ul>
+                  </li>
+                  <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="facebook.png" class="img-fluid" alt="Facebook" width="35" height="35">
+                  </a>
+                  <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                    <img src="x.png" class="img-fluid" alt="X" width="35" height="35">
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="instagram.png" class="img-fluid" alt="Instagram" width="35" height="35">
+                  </a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Favicon picture display -->
+    <button type="button" data-bs-toggle="modal" data-bs-target="#FaviconModal">
+        <img src="favicon.jpg" class="img-fluid">
+    </button>
+    
+    <div class="modal fade" id="FaviconModal" tabindex="-1" aria-labelledby="FaviconModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="FaviconModalLabel">My favorite icon!</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="favicon.jpg" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- next picture -->
+    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img src="favicon.jpg" class="img-fluid">
+    </button>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Picture</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="favicon.jpg" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
